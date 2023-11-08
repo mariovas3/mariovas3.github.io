@@ -1,8 +1,0 @@
-title: WIP on personal webpage;
-description: >-  # this means to ignore newlines until "baseurl: "
-  Portfolio website.
-
-github_username: mariovas3
-
-# Build settings;
-theme: minimal
