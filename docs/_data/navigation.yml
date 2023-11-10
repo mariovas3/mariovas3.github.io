@@ -1,9 +1,12 @@
 # main links
 main:
+  - title: "About"
+    url: /about/
+  - title: "CV"
+    url: "https://drive.google.com/file/d/1niE8rHBPrsh14YpeACAN8Ew3BZWiFzyr/view?usp=sharing"
   - title: "Posts by tags"
     url: /tags/
   - title: "Posts by category"
-    url: /categories/
-  # - title: "About"
-  #   url: maybe add some permalink page
+    url: /categories/ 
+  
 
