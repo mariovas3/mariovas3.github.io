@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
@@ -20,7 +20,10 @@ title                    : "Mario's Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Mario Vasilev"
-description              : "An amazing website."
+description: >- # this means to ignore newlines until "baseurl:"
+  This is my portfolio website. It will contain posts about Machine 
+  Learning, Computer Science, Mathematics and developer tools.
+# description              : "An amazing website."
 url                      : "https://mariovas3.github.io"  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mariovas3/mariovas3.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,7 +112,7 @@ analytics:
 author:
   name             : "Mario Vasilev"
   avatar           : "/assets/images/gh_profile_pic.png"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Bio"
+  bio              : "MSc Machine Learning from UCL."
   location         : "London, United Kingdom"
   email            : "mariovasilev212 at gmail dot com"
   links:
@@ -296,6 +299,12 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false  # true
-      share: true
-      related: true
+      comments: false
+      share: false
+      related: false
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
