@@ -2,6 +2,8 @@
 * This repo contains the files needed to host my personal website using Github pages.
 * The current config uses the `/docs` directory from the `master` branch to build the website.
 * Rebuilds get triggered by pushing/merging code to the `master` branch.
+* The first part of the README describes how to get a Jekyll [minima](https://github.com/jekyll/minima) theme working.
+* The second part of the README describes how to get the more feature rich [minimal mistakes](https://mmistakes.github.io/minimal-mistakes/) Jekyll theme working.
 
 ## Why Docker?
 * Write the Dockerfile once, and guarantee the same container on each run. No need for remembering setups and difficulties when changing machines.
@@ -32,7 +34,7 @@
     * starting with `_`, `.`, or `#`,
     * are located in a folder called `node_modules` or `/vendor`.
     * end with `~`.
-    * are excluded using the `exclude` key word in the `_config.yml` file.
+    * are excluded using the `exclude` keyword in the `_config.yml` file.
 * The following Jekyll plugins cannot be disabled (required by GH):
     * jekyll-coffeescript
     * jekyll-default-layout
@@ -56,7 +58,7 @@
     ```Bash
     docker run -v $PWD/docs:/site -it -p 4000:4000 --name jekyll-serve mariovas/my-jekyll-image bash
     ```
-* If initial setup run:
+* If initial setup, run:
     ```Bash
     jekyll new --skip-bundle .  # to create the static site files
     bundle add webrick  # since ruby version >= 3 - as per Jekyll docs
@@ -65,9 +67,17 @@
 * Run
     ```Bash
     bundle install
-    bundle exec jekyll serve --force-polling -H 0.0.0.0
+    bundle exec jekyll serve -H 0.0.0.0
     ```
 The last command should start the webserver on `localhost:4000`, so you can check how it looks from your browser.
+
+## Instructions for the *minimal mistakes* theme:
+* I followed the process for "Remote theme method" from the quickstart guide [here](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+* You should `curl` the `_config.yml` from the repo and do the necessary edits for the features you want. The config file is linked in the "Start fresh" section of the Quickstart and a link to the current version can be found [here](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/_config.yml).
+* To get the stuff working on GH pages, you need to also curl the `_data/ui-text.yml` and `_data/navigation.yml` files. The first is about the text of the ui, while the second is for customising the ribbon of your site.
+* Now proceed to the "Starting from jekyll new" section of the Quickstart guide. There, you will either have to curl an `index.html` file or make the edits on your index file that you already have (since it's less than five lines of code).
+* That concludes the basic setup and you should be able to run `bundle exec jekyll serve -H 0.0.0.0` from inside your container and the relevant root directory for your site. If following this tutorial, `/site` insited the container is your root directory and it is bind-mounted to your host's `<my_repo>/docs` directory.
+* You can follow the rest of the advice on the [minimal mistakes](https://mmistakes.github.io/minimal-mistakes/) website to further customise your site.
 
 ## Caveats:
 * In the above config, I assume you have configured deployment from the `/docs` directory of this repo and not the root (check your github settings for this).
