@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 ## Brief Summary:
-Currently a student of MSc Machine Learning at [University College London](https://www.ucl.ac.uk). With experience and interests in Reinforcement Learning, Inverse Reinforcement Learning and Generative Models. I have also completed courseworks and work experience with NLP.
+Graduate of MSc Machine Learning at [University College London](https://www.ucl.ac.uk). With experience and interests in Reinforcement Learning, Inverse Reinforcement Learning and Generative Models. I have also completed courseworks and work experience with NLP.
 
 Before this I was working as an Applied Scientist at [NewDay](https://www.newday.co.uk/), where I applied Deep Learning (Natural Language Processing) for text augmentation and sentiment analysis. I also iterated over different architectures (CNN, LSTM, BERT) to improve the performance of an incumbent chatbot model. Other projects I worked on, were associated with performing analytics for the business teams.
 
