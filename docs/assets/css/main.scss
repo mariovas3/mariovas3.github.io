@@ -1,0 +1,94 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
+/* system typefaces */
+$serif: Georgia, Times, serif !default;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+
+/* sans serif typefaces */
+$sans-serif-narrow: $sans-serif !default;
+$helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+
+/* serif typefaces */
+$georgia: Georgia, serif !default;
+$times: Times, serif !default;
+$bodoni: "Bodoni MT", serif !default;
+$calisto: "Calisto MT", serif !default;
+$garamond: Garamond, serif !default;
+
+$global-font-family: $sans-serif !default;
+$header-font-family: $sans-serif !default;
+$caption-font-family: $serif !default;
+
+/* type scale */
+$type-size-1: 2.441em !default; // ~39.056px; 2.441em
+$type-size-2: 1.953em !default; // ~31.248px; 1.953em
+$type-size-3: 1.563em !default; // ~25.008px; 1.563em
+$type-size-4: 1.25em !default; // ~20px; 1.25em
+$type-size-5: 1.2em !default; // ~16px; 1em
+$type-size-6: 0.75em !default; // ~12px; 0.75em
+$type-size-7: 0.6875em !default; // ~11px; 0.6875em
+$type-size-8: 0.625em !default; // ~10px; 0.625em
+
+/* headline scale */
+$h-size-1: 1.563em !default; // ~25.008px; 1.563em
+$h-size-2: 1.25em !default; // ~20px; 1.25em
+$h-size-3: 1.125em !default; // ~18px; 1.125em
+$h-size-4: 1.0625em !default; // ~17px; 1.0625em
+$h-size-5: 1.03125em !default; // ~16.5px; 1.03125em
+$h-size-6: 1em !default; // ~16px; 1em
+
+$x-large: 1320px !default; // was 1280px
+
+@import "minimal-mistakes"; // main partials
+
+html {
+  font-size: 16px; // change to whatever
+
+  @include breakpoint($medium) {
+    font-size: 16px; // change to whatever
+  }
+
+  @include breakpoint($large) {
+    font-size: 16px; // change to whatever
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 16px; // change to whatever
+  }
+}
+
+.author__avatar {
+  img {
+    max-width: 150px; // was 110px
+    border-radius: 50%;
+
+    @include breakpoint($large) {
+      padding: 5px;
+      border: 1px solid $border-color;
+    }
+  }
+}
+
+.author__bio {
+  margin: 0;
+  font-size: 1.2em; // was 1em
+  //font-style: italic; // I added this;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.page__content {
+  text-align: justify;
+}

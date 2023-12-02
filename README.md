@@ -63,7 +63,7 @@
     jekyll new --skip-bundle .  # to create the static site files
     bundle add webrick  # since ruby version >= 3 - as per Jekyll docs
     ```
-    And now edit the Gemfile with `sudo` privilege to remove the `gem "jekyll" line` and add `gem "github-pages", "~> GITHUB_PAGES_VERSION", group:jekyll_plugins`, substituting the `GITHYB_PAGES_VERSION` by the appropriate version from [dependencies](https://pages.github.com/versions/) for `github-pages`.
+    And now edit the Gemfile with `sudo` privilege to remove the `gem "jekyll" line` and add `gem "github-pages", "~> GITHUB_PAGES_VERSION", group:jekyll_plugins`, substituting the `GITHUB_PAGES_VERSION` by the appropriate version from [dependencies](https://pages.github.com/versions/) for `github-pages`.
 * Run
     ```Bash
     bundle install
@@ -76,8 +76,61 @@ The last command should start the webserver on `localhost:4000`, so you can chec
 * You should `curl` the `_config.yml` from the repo and do the necessary edits for the features you want. The config file is linked in the "Start fresh" section of the Quickstart and a link to the current version can be found [here](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/_config.yml).
 * To get the stuff working on GH pages, you need to also curl the `_data/ui-text.yml` and `_data/navigation.yml` files. The first is about the text of the ui, while the second is for customising the ribbon of your site.
 * Now proceed to the "Starting from jekyll new" section of the Quickstart guide. There, you will either have to curl an `index.html` file or make the edits on your index file that you already have (since it's less than five lines of code).
-* That concludes the basic setup and you should be able to run `bundle exec jekyll serve -H 0.0.0.0` from inside your container and the relevant root directory for your site. If following this tutorial, `/site` insited the container is your root directory and it is bind-mounted to your host's `<my_repo>/docs` directory.
+* That concludes the basic setup and you should be able to run `bundle exec jekyll serve -H 0.0.0.0` from inside your container and the relevant root directory for your site. If following this tutorial, `/site` inside the container is your root directory and it is bind-mounted to your host's `<my_repo>/docs` directory.
 * You can follow the rest of the advice on the [minimal mistakes](https://mmistakes.github.io/minimal-mistakes/) website to further customise your site.
+
+### Getting maths to render with latex:
+* Create the `_includes/scripts.html` file and add the necessary mathjax script:
+    ```HTML
+    {% if page.mathjax %}
+    <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    {% endif %}
+    ```
+    Note the if statement. You have to specify `mathjax: true` in the frontmatter of posts or pages that will use mathjax.
+* Make sure you have `markdown: kramdown` in your `_config.yml`.
+* You should be able to render stuff properly now. Use `$$ some latex code $$` for inline latex. For display mode, you should leave an empty line before and after the enclosing double dollar signs respectively. It should be something like:
+    ```
+    Talk about some stuff, blah, blah, blah...
+    
+    $$
+    \begin{equation}
+        latex code here
+    \end{equation}
+    $$
+    
+    continue talking blah, blah, blah...
+    ```
+
+### Change font-size:
+* Append the following to your `assets/css/main.scss` (you should copy the file from the minimal mistakes repo and then append to it) file:
+    ```SCSS
+    html {
+        font-size: 16px; // change to whatever
+        
+        @include breakpoint($medium) {
+            font-size: 16px; // change to whatever
+        }
+        
+        @include breakpoint($large) {
+            font-size: 16px; // change to whatever
+        }
+        
+        @include breakpoint($x-large) {
+            font-size: 16px; // change to whatever
+        }
+    }
+    ```
+    and edit as you please.
+
+### Make all text in your markdowns in *justify* format:
+* Append the following to your `assets/css/main.scss` file:
+    ```SCSS
+    .page__content {
+        text-align: justify;
+    }
+    ```
 
 ## Caveats:
 * In the above config, I assume you have configured deployment from the `/docs` directory of this repo and not the root (check your github settings for this).
