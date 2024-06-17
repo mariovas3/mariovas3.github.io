@@ -19,4 +19,3 @@ Thanks to the deep technical skills acquired from my master's degree in Machine 
 * <a href="https://github.com/mariovas3/rl-algos" alt="link to rl-algos repo">Reinforcement Learning algorithms</a>.
 * <a href="https://github.com/mariovas3/text-recogniser" alt="link to text-recogniser repo">Text Recogniser</a> - multimodal transformer model.
 * <a href="https://github.com/mariovas3/llms" alt="link to llms repo">LLMs from scratch</a>.
-* <a href="https://github.com/mariovas3/rl-algos" alt="link to rl-algos repo">Various RL algorithms</a> - Bandits, n-step Q-learning, DynaQ.
