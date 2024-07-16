@@ -15,11 +15,11 @@ I did my bachelor's degree - BSc Statistics, Economics and Finance (accredited b
 ## Career interests:
 Thanks to the deep technical skills acquired from my master's degree in Machine Learning, I am looking forward to working on the implementation and engineering of complex systems similar but not limited to the ones mentioned above (RL and NLP). As such I will be more interested in an Engineering role rather than a pure Research one. 
 
-A link to my CV is provided [here](https://drive.google.com/file/d/1sMmWqzUNLrgzl9achbkzm7YQFxOsj0Tk/view?usp=sharing). Check some of the blog posts I've written [here](https://mariovas3.github.io/posts_list).
+A link to my CV is provided [here](https://drive.google.com/file/d/1xjfJmlEbxrjGz7CYEP9a2VwY8ZKAdysc/view?usp=sharing). Check some of the blog posts I've written [here](https://mariovas3.github.io/posts_list).
 
 ## Featured projects:
 * <a href="https://github.com/mariovas3/rl-algos" alt="link to rl-algos repo">Reinforcement Learning algorithms</a> - such as *PPO*.
-* <a href="https://github.com/mariovas3/bert-lora">Finetuning BERT with LoRA</a> for text classification - Using *Lightning*, *Hugging Face*, and deploying with *Flask* and *Docker*.
+* <a href="https://github.com/mariovas3/bert-lora">Finetuning BERT with LoRA</a> in `bfloat16` for text classification - Using *Lightning*, *Hugging Face*, and deploying with *Flask* and *Docker* to *Gradio* web app.
 * <a href="https://github.com/mariovas3/deploying-bert">Serverless deployment of BERT</a> for text classification - Using *PyTorch*, *Hugging Face*, *Docker*, *AWS Lambda*.
 * <a href="https://github.com/mariovas3/text-recogniser" alt="link to text-recogniser repo">Text Recogniser</a> - multimodal transformer model (OCR task).
 * <a href="https://github.com/mariovas3/llms" alt="link to llms repo">LLMs from scratch</a> - *GPT-2*.
