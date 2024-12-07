@@ -6,16 +6,16 @@ author_profile: true
 ---
 
 ## Brief Summary:
-Graduate of MSc Machine Learning at [University College London](https://www.ucl.ac.uk). With experience and interests in *Reinforcement Learning* and *Generative Models*. I have also completed courseworks and work experience with *NLP* (GAN-BERT for semi-supervised learning) and *Computer Vision* (VAE, Neural Style Transfer).
+I am currently a *Computer Vision Algorithms Researcher I* at [Zebra Technologies](https://www.zebra.com/gb/en.html) in London, UK. Despite the title, my output has mainly been that of a Research Engineer - improving model predictive performance, actively contributing to and maintaining our internal core repository, and greatly **reducing the latency** across the company's models when deployed on **edge devices** with **NPUs**. So far, my contributions on improving predictive performance and latency of vision models have been algorithmic and have affected all models in our business unit, thus making them high impact contributions.
 
-Before this I was working as an Applied Scientist at [NewDay](https://www.newday.co.uk/), where I applied Deep Learning (Natural Language Processing) for text augmentation and sentiment analysis. I also iterated over different architectures (CNN, LSTM, BERT) to improve the performance of an incumbent chatbot model. Other projects I worked on include building a churn prediction model and marketing channel analysis using Bayesian models.
+I graduated from MSc Machine Learning at [University College London](https://www.ucl.ac.uk). With experience and interests in *Reinforcement Learning* and *Generative Models*. I have also completed courseworks related to *NLP* (GAN-BERT for semi-supervised learning) and *Computer Vision* (VAE, Neural Style Transfer).
+
+Before this I was working as an Applied Scientist at [NewDay](https://www.newday.co.uk/), where I applied Deep Learning (Natural Language Processing) for text augmentation and sentiment analysis. I also worked on improving the performance of an incumbent chatbot model. Other projects I worked on include building a churn prediction model and marketing channel analysis using Bayesian models.
 
 I did my bachelor's degree - BSc Statistics, Economics and Finance (accredited by the [Royal Statistical Society](https://rss.org.uk/)) - at [University College London](https://www.ucl.ac.uk).
 
 ## Career interests:
-Thanks to the deep technical skills acquired from my master's degree in Machine Learning, I am looking forward to working on the implementation and engineering of complex systems similar but not limited to the ones mentioned above (RL and NLP). As such I will be more interested in an Engineering role rather than a pure Research one.
-
-A link to my CV is provided [here](https://drive.google.com/file/d/1er_DpcqLfqiQp5RwXDv9yK5zMFqF1bkH/view?usp=sharing). Check some of the blog posts I've written [here](https://mariovas3.github.io/posts_list).
+So far my contributions have been general and high impact, I am flexible when it comes to optimising predictive and speed performance of models of different modalities. I am more interested in a Research Engineering role rather than a pure Research one, therefore. See my [CV](https://drive.google.com/file/d/1wohUsuf_mL2NVbtHP6ihdlwULqEr64G_/view?usp=sharing) for more information.
 
 ## Featured projects:
 * <a href="https://github.com/mariovas3/rl-algos" alt="link to rl-algos repo">Reinforcement Learning algorithms</a> - such as *PPO* and *DQN*.

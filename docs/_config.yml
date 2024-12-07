@@ -112,7 +112,7 @@ analytics:
 author:
   name             : "Mario Vasilev"
   avatar           : "/assets/images/gh_profile_pic.png"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "MSc Machine Learning from UCL."
+  bio              : "Computer Vision Algorithms Researcher I @ZebraTechnologies; MSc Machine Learning from UCL."
   location         : "London, United Kingdom"
   email            : "mariovasilev212 at gmail dot com"
   links:
