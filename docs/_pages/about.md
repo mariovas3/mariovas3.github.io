@@ -15,7 +15,11 @@ Before this I was working as an Applied Scientist at [NewDay](https://www.newday
 I did my bachelor's degree - BSc Statistics, Economics and Finance (accredited by the [Royal Statistical Society](https://rss.org.uk/)) - at [University College London](https://www.ucl.ac.uk).
 
 ## Career interests:
-So far my contributions have been general and high impact, I am flexible when it comes to optimising predictive and speed performance of models of different modalities. My interests lie in Research Engineering, therefore. See my [CV](https://drive.google.com/file/d/1wohUsuf_mL2NVbtHP6ihdlwULqEr64G_/view?usp=sharing) for more information.
+So far my contributions have been general and high impact, I am flexible when it comes to optimising predictive and speed performance of models of different modalities. My interests lie in Research Engineering, therefore. See my [CV](https://drive.google.com/file/d/1z1Jg2k6Ih9tZZ6GpHji2WlV1SxD8XlyC/view?usp=sharing) for more information.
+
+## Open source contributions:
+* <a href="https://github.com/pytorch/pytorch/pull/143455#issuecomment-2594367690" alt="link to set_submodule torch PR">PyTorch contribution</a> - Add a `strict` kwarg and fix a bug in `nn.Module.set_submodule`.
+* <a href="https://github.com/Lightning-AI/pytorch-lightning/pull/19808#pullrequestreview-2100497157" alt="link to ModelCheckpoint lightning PR">PyTorch Lightning contribution</a> - fix a bug in `callbacks.ModelCheckpoint`.
 
 ## Featured projects:
 * <a href="https://github.com/mariovas3/rl-algos" alt="link to rl-algos repo">Reinforcement Learning algorithms</a> - such as *PPO* and *DQN*.
